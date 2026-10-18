@@ -50,3 +50,14 @@ En la pantalla del recibo toca «Imprimir / Guardar PDF». En Android, seleccion
 Guardar como PDF en el diálogo de impresión. Es posible que Chrome pida permiso
 para abrir ventanas emergentes.
 Los recibos no constituyen facturas fiscales.
+
+MARIO BOOKS V6 — CABECERA DE IMPRESIÓN
+Todos los comprobantes imprimibles de encargos y cobros llevan en la cabecera exactamente: FOTOCOPIAS - LIBRERIA MARIO. El nombre de la aplicación sigue siendo Mario Books.
+
+
+VERSIÓN V7 — CORRECCIÓN PARA SAMSUNG GALAXY A55
+- Los formularios emergentes utilizan pantalla completa en celulares.
+- El contenido del formulario se desplaza verticalmente sin ocultar Guardar/Cancelar.
+- Botones táctiles de al menos 48 px en el pie del formulario.
+- Compatibilidad con áreas seguras y teclado móvil.
+- Se mantienen las funciones y la misma clave de datos locales de V6.

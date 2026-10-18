@@ -2,3 +2,30 @@
 
 /* V2: filtros de período del dashboard */
 .dashboard-period{display:flex;align-items:end;flex-wrap:wrap;gap:10px;margin:0 0 16px;padding:14px 16px;border-radius:18px;background:#fff;border:1px solid #edf2ef}.dashboard-period>div{flex:1;min-width:135px}.dashboard-period label{display:block;margin-bottom:5px;color:#5f776b;font-weight:700;font-size:12px}.dashboard-period .btn{white-space:nowrap}@media(max-width:750px){.dashboard-period{padding:12px;gap:9px}.dashboard-period>div{min-width:120px}.dashboard-period .btn{flex:1}}
+
+
+/* V7: formularios adaptables y acciones siempre visibles, Galaxy A55 y otros móviles */
+html,body{max-width:100%;overflow-x:hidden}
+.modal-dialog-scrollable .modal-content{overflow:hidden;max-height:calc(100dvh - 24px)}
+#editForm{display:flex;flex-direction:column;min-height:0;flex:1 1 auto;overflow:hidden}
+#editForm .modal-body{flex:1 1 auto;min-height:0;overflow-y:auto;overscroll-behavior:contain;-webkit-overflow-scrolling:touch}
+#editForm .modal-footer{flex:0 0 auto;background:#fff;z-index:2}
+#editForm .field-grid>*{min-width:0}
+#editForm input,#editForm select,#editForm textarea{max-width:100%;min-width:0}
+@media(max-width:750px){
+ .app-shell{width:100%;max-width:100%;min-height:100dvh}
+ .content,.page,.panel,.metric{min-width:0}
+ .modal{padding:0!important}
+ #editModal .modal-dialog{width:100%;max-width:none;height:100dvh;min-height:100dvh;margin:0;display:flex;align-items:stretch}
+ #editModal .modal-content{width:100%;height:100dvh;max-height:100dvh;min-height:0;border-radius:0;display:flex;flex-direction:column}
+ #editModal .modal-header{flex-shrink:0;padding:calc(13px + env(safe-area-inset-top,0px)) 16px 13px}
+ #editForm{min-height:0;flex:1 1 auto}
+ #editForm .modal-body{padding:12px 16px 24px;min-height:0;overflow-y:auto;overflow-x:hidden}
+ #editForm .field-grid{grid-template-columns:minmax(0,1fr)}
+ #editForm .modal-footer{padding:12px 16px calc(12px + env(safe-area-inset-bottom,0px));display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.4fr);gap:10px;box-shadow:0 -4px 14px rgba(0,0,0,.06)}
+ #editForm .modal-footer>*{margin:0;width:100%;min-height:48px}
+ #editForm input,#editForm select,#editForm textarea{font-size:16px}
+ .page-heading{flex-wrap:wrap}
+ .page-heading>.btn{white-space:normal}
+ .dashboard-period>div{min-width:0;flex:1 1 125px}
+}
