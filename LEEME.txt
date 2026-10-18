@@ -38,3 +38,15 @@ NOTA: Se conserva la clave interna librocontrol_v1 para mantener compatibilidad 
 
 V4 - VACIADOR DE DATOS
 En Reportes y respaldo se incorpora Vaciar datos del sistema. Recomendamos descargar respaldo JSON antes de vaciar. Para confirmar se debe escribir VACIAR y aceptar la advertencia. Se borran únicamente los registros de Mario Books en este origen del navegador; no se elimina información de otros sistemas.
+
+
+MARIO BOOKS V5 - RECIBOS
+========================
+En Ventas y encargos, utiliza «Recibo de encargo» en cualquier venta para visualizar
+el comprobante con cliente, colonia, campo, libro, entrega, total y saldo.
+Selecciona «Ver pagos» y «Recibo» junto a cada adelanto o abono para emitir
+un comprobante individual con fecha, importe, total acumulado y saldo tras el pago.
+En la pantalla del recibo toca «Imprimir / Guardar PDF». En Android, selecciona
+Guardar como PDF en el diálogo de impresión. Es posible que Chrome pida permiso
+para abrir ventanas emergentes.
+Los recibos no constituyen facturas fiscales.
