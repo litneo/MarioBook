@@ -1,0 +1,40 @@
+MARIO BOOKS V3 — VENTAS DE LIBROS / ENCARGOS
+===========================================
+REQUISITOS: navegador Chrome reciente en Android Samsung A55 o PC.
+
+INICIO RÁPIDO
+1. Descomprime el ZIP.
+2. Abre index.html en Chrome. Necesitas internet al inicio para descargar Bootstrap desde CDN.
+3. En Clientes registra nombre, colonia y campo.
+4. En Libros registra título y precio en bolivianos.
+5. En Ventas crea un encargo, elige cliente y libro, fecha de entrega y adelanto.
+6. Usa "Registrar abono" para recibir pagos adicionales y "Marcar entregado" cuando corresponda.
+7. Consulta el resumen y los reportes. Descarga periódicamente copias de seguridad JSON.
+
+PARA USAR EN ANDROID
+La opción recomendada es publicar estos archivos en un servidor HTTPS estático
+(por ejemplo GitHub Pages o hosting privado). Abre esa URL con Chrome en tu Samsung A55.
+Chrome > menú de tres puntos > Añadir a pantalla de inicio (si está disponible).
+El uso de un mismo enlace NO sincroniza los datos entre dispositivos: el almacenamiento
+es local a cada navegador y al origen web (URL). Usa la exportación/importación JSON
+para mover los datos manualmente. Para multiusuario se necesita un backend.
+
+IMPORTANTE
+- Nunca borres los datos del navegador sin descargar antes un respaldo JSON.
+- El estado de entrega es independiente de si el cliente terminó de pagar.
+- Cada venta incluye un título, una cantidad y una fecha de entrega.
+- Los pagos se registran con fecha. El reporte de cobros usa la fecha de pago.
+- No hay autenticación ni sincronización; es una aplicación local de una sola persona.
+- Los importes se almacenan como números con hasta 2 decimales; no se convierten monedas.
+
+VERSIÓN 2
+- Filtro de MES y AÑO en el dashboard; el gráfico presenta los meses del año seleccionado o las semanas del mes elegido.
+- Los montos vendidos y saldos corresponden a las ventas del período; lo cobrado corresponde a los pagos efectuados en el período, independientemente de la fecha de venta.
+- Las entregas pendientes se filtran según su fecha prevista de entrega dentro del período.
+- En libros, Autor se reemplaza por Características del libro, con un campo de texto amplio. Los respaldos antiguos que tengan autor se muestran como características al editar y guardar.
+- Se conserva el almacenamiento local anterior; no es necesario borrar los datos.
+
+NOTA: Se conserva la clave interna librocontrol_v1 para mantener compatibilidad con los datos de versiones anteriores.
+
+V4 - VACIADOR DE DATOS
+En Reportes y respaldo se incorpora Vaciar datos del sistema. Recomendamos descargar respaldo JSON antes de vaciar. Para confirmar se debe escribir VACIAR y aceptar la advertencia. Se borran únicamente los registros de Mario Books en este origen del navegador; no se elimina información de otros sistemas.
